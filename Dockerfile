@@ -1,2 +1,2 @@
-FROM alpine:3.10
+FROM jenkins/jenkins:lts
 LABEL source=scan-action-test

@@ -1,2 +1,2 @@
-FROM jenkins/jenkins:lts
+FROM morello/docker-whale
 LABEL source=scan-action-test

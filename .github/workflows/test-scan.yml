@@ -23,7 +23,6 @@ jobs:
           pcc_user: ${{ secrets.PCC_USER }}
           pcc_pass: ${{ secrets.PCC_PASS }}
           image_name: ${{ env.IMAGE_NAME }}
-          containerized: true
 
       - name: Upload SARIF
         if: ${{ always() }}

@@ -6,7 +6,7 @@ env:
 jobs:
   build-and-scan:
     name: Build and scan image
-    runs-on: [self-hosted, linux, x64]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check out the repository
@@ -17,7 +17,7 @@ jobs:
 
       - name: Prisma Cloud Compute scan
         id: scan
-        uses: PaloAltoNetworks/prisma-cloud-scan@97dcc6f60323f4c5054953d68431df13762d61a9
+        uses: PaloAltoNetworks/prisma-cloud-scan@proxy-support
         with:
           pcc_console_url: ${{ secrets.PCC_CONSOLE_URL }}
           pcc_user: ${{ secrets.PCC_USER }}
